@@ -946,9 +946,10 @@ section,
 .about .icon-box {
   background-color: var(--surface-color);
   padding: 20px 30px;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 10px 5px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
+  margin-bottom: 20px;
 }
 
 .about .icon-box i {
@@ -1077,10 +1078,10 @@ section,
 }
 
 .services .service-item .icon {
-  width: 48px;
+  width: 70px;
   height: 48px;
   position: relative;
-  margin-right: 50px;
+  margin-right: 20px;
   line-height: 0;
 }
 
