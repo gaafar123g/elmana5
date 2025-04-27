@@ -739,6 +739,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   position: relative;
+  margin-top: revert-layer;
 }
 
 .section-title h2:before,
@@ -1073,6 +1074,7 @@ section,
   height: 2px;
   background: var(--accent-color);
   border-right: 5px solid var(--background-color);
+  direction: rtl;
 }
 
 .services .service-item .icon {
@@ -1089,6 +1091,7 @@ section,
   transition: ease-in-out 0.3s;
   z-index: 2;
   position: relative;
+
 }
 
 .services .service-item .icon:before {
@@ -1096,7 +1099,7 @@ section,
   content: "";
   height: 30px;
   width: 30px;
-  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: none;
   border-radius: 50px;
   z-index: 1;
   bottom: -15px;
