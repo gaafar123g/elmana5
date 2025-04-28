@@ -27,9 +27,15 @@
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+<!--  test slider-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <!-- Main CSS File -->
   <link href="css/main.css" rel="stylesheet">
+  <style>
+    .mySlides {display:none}
+
+  </style>
 
   <!-- =======================================================
   * Template Name: Append
@@ -409,7 +415,7 @@
                 <h4 class="title"><a href="services-details.html" class="stretched-link"> تحديث المصاعد </a></h4>
                 <p class="description">
                   تحديث المصاعد يعني ببساطة تطوير أو تحسين <br>المصعد القديم بدل ما يتم استبداله بالكامل.<br> 🚀
-الهدف منه إنه يخلي المصعد أكثر أمانًا،<br> أسرع، وأحيانًا أكثر أناقة وكفاءة بالطاقة! 💡🔋</p>
+الهدف منه إنه يخلي المصعد أكثر أمانًا،<br> أسرع، وأحيانًا أكثر أناقة وكفاءة بالطاقة!</p>
               </div>
               <div class="icon flex-shrink-0"><img style="width: 190px;height: 150px;margin-left: 15px;" src="img/blog/blog-1.jpg"></div>
 
@@ -525,6 +531,27 @@
 
     </section><!-- /Features Section -->
 <!--   test       testimonials    -->
+<div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+</div>
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="img/customer/test.jpg" style="width:100%">
+  <img class="mySlides" src="img/customer/test.jpg" style="width:100%">
+  <img class="mySlides" src="img/customer/16.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+
  <!-- Testimonials Section -->
  <section id="portfolio" class="testimonials section light-background"dir="rtl">
 
@@ -532,7 +559,7 @@
 
     <div class="row align-items-center">
 
-      <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 info" data-aos="fade-up" data-aos-delay="100">
         <h3>شركاء النجاح</h3>
         <p>
           Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -540,7 +567,7 @@
         </p>
       </div>
 
-      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-8 col-md-8 col-xl-12" data-aos="fade-up" data-aos-delay="200">
 
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
@@ -558,52 +585,23 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper col-md-8 col-xl-12">
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="d-flex">
-                  <img src="img/customer/c.1.jpeg" class="testimonial-img flex-shrink-0" alt="">
-                  <div>
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
+                  <img src="img/customer/test.jpg"alt="">
+                 
                 </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                
               </div>
             </div><!-- End testimonial item -->
 
+           
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="d-flex">
-                  <img src="img/customer/c.2.jpeg" class="testimonial-img flex-shrink-0" alt="">
-                  <div>
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="d-flex">
-                  <img src="img/customer/c.3.jpeg" class="testimonial-img flex-shrink-0" alt="">
+                  <img src="img/customer/test.jpg"alt="">
                   <div>
                     <h3>Jena Karlis</h3>
                     <h4>Store Owner</h4>
@@ -1262,8 +1260,34 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
-<script>
   
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
 </script>
 </body>
 
