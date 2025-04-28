@@ -156,8 +156,10 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 45px;
   margin-left: 8px;
+  width: 160px;
+  border-radius: 12px;
 }
 
 .header .logo h1 {
@@ -1847,10 +1849,11 @@ section,
 }
 
 .recent-posts .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   padding: 0;
   margin: 0 0 20px 0;
+  text-align: center;
 }
 
 .recent-posts .title a {
