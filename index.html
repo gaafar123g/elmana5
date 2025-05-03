@@ -13,7 +13,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="img/logo.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -34,9 +34,11 @@
   <link href="css/main.css" rel="stylesheet">
   <style>
     .mySlides {display:none}
+       /*  end slider */
+
 
   </style>
-
+ 
   <!-- =======================================================
   * Template Name: Append
   * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
@@ -44,6 +46,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+   .carousel-indicators .active{
+    background-color: var(--accent-color);
+    border:2px solid #ffd800;
+    width: 20px;
+   }
+  </style>
 </head>
 
 <body class="index-page">
@@ -55,43 +64,27 @@
         <ul>
           <li><a href="index.html#hero" class="active">الرئسية</a></li>
           <li><a href="index.html#about"> نبذة عنا </a></li>
-          <li class="dropdown"><a href="index.html#services"><span>الخدمات</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+         <!-- <li class="dropdown"><a href="index.html#team"><span>المنتجات</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href=""><span>الخدمات</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> 
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#"> الأبواب الأوتوماتيك الخارجية </a></li>
+              <li><a href="#"> الأبواب النصف أوتوماتيك </a></li>
+              <li><a href="#"> أبواب السلامة  </a></li>
+              <li><a href="#"> وحدات التحكم </a></li>
+              <li><a href="#"> المصاعد الهيدروليكية  </a></li>
+              <li><a href="#"> مصاعد الشحن  </a></li>
+              <li><a href="#"> مصاعد الطعام </a></li>
+
             </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>المنتاجات</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> 
-            
-            </ul>
-          </li>
+          </li>-->
+          <li><a href="index.html#services"> خدماتنا </a></li>
+                    <li><a href="index.html#team" class="active">المنتجات</a></li>
+
+         
           <li><a href="index.html#portfolio">شركاء النجاح</a></li>
-          <li><a href="index.html#pricing"> النجاح</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#faq"> الأسئلة الشائعة </a></li>
+
+          <li><a href="index.html#contact"> أتصل بنا </a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       
@@ -101,8 +94,8 @@
      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a>-->
 
     </div>
-    <a style="margin-left: 4%;" href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="img/logo.jpeg" alt=""> 
+    <a style="margin-left: 4%;margin-bottom: 9px;" href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="img/logo.png" alt=""> 
   <!--    <h1 class="sitename"style="text-align:right">المانع للمصاعد</h1>-->
     </a>
   </header>
@@ -118,16 +111,16 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="img/slider/1.jpeg" alt="Los Angeles" style="width:100%;height: 550px;">
+      <div class="item active"style="">
+        <img src="img/slider/10.jpg" alt="Los Angeles" style="width:100%;height: 570px;">
       </div>
 
       <div class="item">
-        <img src="img/slider/2.jpeg" alt="Chicago" style="width:100%;height: 550px">
+        <img src="img/slider/12.jpg" alt="Chicago" style="width:100%;height: 570px">
       </div>
     
       <div class="item">
-        <img src="img/slider/3.jpeg" alt="New york" style="width:100%;height: 550px">
+        <img src="img/slider/3.jpeg" alt="New york" style="width:100%;height: 570px">
       </div>
     </div>
 
@@ -155,69 +148,75 @@
     </section><!-- /Clients Section -->
 
     <!-- About Section  Abuot -->
-    <section id="about" class="about section light-background">
-
+     <section id="about" class="about section light-background">
       <div dir="rtl" class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
-          <h2 style="margin-right: 2%;">نبذة عنا <hr style="width: 10%;text-align: center"></h2>
-         
-          <div class="col-xl-5 content">
-            <h1>نبذة مختصرة المانع للمصاعد </h1>
-            <h2> شركة متخصصة في [تصميم، تركيب، صيانة، وتحديث المصاعد والسلالم المتحركة ]، تقدم حلولاً متكاملة للمباني السكنية والتجارية والفندقية. </h2>
+
+          <div style="padding-top: 20px;" class="container section-title" data-aos="fade-up">
+            <h2> نبذة عنا </h2>
           </div>
 
+          <div class="col-xl-5 content">
+            <h1>نبذة مختصرة المانع للمصاعد </h1>
+            <h4> شركة متخصصة في [تصميم، تركيب، صيانة، وتحديث المصاعد والسلالم المتحركة ]، تقدم حلولاً متكاملة للمباني السكنية والتجارية والفندقية. </h4>
+         <br>
+         <section class="mb-4" style="text-align: center;">
+          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends" role="button">
+            <i class="bi bi-facebook" style="color: #3b5998;font-size: 24px;"></i></a>
+          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://www.instagram.com/almanaelevaror/" role="button">
+            <i class="bi bi-instagram"style="color: #ac2bac;font-size: 24px;"></i></a>
+          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG" role="button">
+            <i class="bi bi-snapchat"style="color: #fac522;font-size: 24px;"></i></a>
+          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc" role="button">
+            <i class="bi bi-tiktok"style="font-size: 24px;"></i></a>
+          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://wsend.co/966966537321962" role="button">
+            <i class="bi bi-whatsapp"style="color: #25D366;font-size: 24px;"></i></a>
+         
+        </section>
+          </div>
           <div class="col-xl-7">
-            <div class="row gy-4 icon-boxes">
 
+            <div class="row gy-4 icon-boxes">
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <i class="bi bi-building-lock"></i>
-                  <h3> سكني </h3>
-                 
+                  <h3> سكني </h3>               
                 </div>
-              </div> <!-- End Icon Box -->
-
-              
+              </div>         
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-buildings"></i>
                   <h3> أداري </h3>
                 </div>
-              </div> <!-- End Icon Box -->
-
+              </div> 
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
                   <i class="bi bi-hospital"></i>
                   <h3> مستشفيات </h3>
                 </div>
-              </div> <!-- End Icon Box -->
-
+              </div> 
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
                   <i class="bi bi-bag-check-fill"></i>
                   <h3> مصاعد تجارية </h3>
                 </div>
-              </div> <!-- End Icon Box -->
+              </div>
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="bi bi-option"></i>
                   <h3> مصاعد الدرج </h3>
                 </div>
-              </div> <!-- End Icon Box -->
-
+              </div>
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="bi bi-graph-up-arrow"></i>
                   <h3>   التطوير </h3>
                 </div>
-              </div> <!-- End Icon Box -->
-             
+              </div>          
             </div>
           </div>
-
         </div>
       </div>
-
     </section><!-- /About Section -->
 <br><br>
     <!-- Stats Section clint And Emp -->
@@ -263,6 +262,7 @@
 
     </section><!-- /Stats Section -->
 <!--  test  -->
+  
 <!-- Recent Posts Section services       recent-posts-->
 <section id="services" class="recent-posts section">
 
@@ -282,7 +282,7 @@
             <img src="img/serviec/1.png" alt="" class="img-fluid">
           </div>
           <h2 class="title">
-            <a href="blog-details.html">صيانة المصاعد</a>
+            <a href="#">صيانة المصاعد</a>
           </h2>
         <!--  <p class="post-category"> الاهتمام بالمصعد بشكل دوري عشان يظل شغال بأمان وكفاءة بدون أعطال مفاجئة! 🔧🛗
 
@@ -315,7 +315,7 @@
             <img src="img/serviec/2...png" alt="" class="img-fluid">
           </div>
           <h2 class="title">
-            <a href="blog-details.html">تحديث</a>
+            <a href="#">تحديث</a>
           </h2>
          <!-- <p class="post-category">تحديث المصاعد يعني ببساطة تطوير أو تحسين المصعد القديم بدل ما يتم استبداله بالكامل. 🚀
             الهدف منه إنه يخلي المصعد أكثر أمانًا، أسرع، وأحيانًا أكثر أناقة وكفاءة بالطاقة! 💡🔋</p>-->
@@ -343,7 +343,7 @@
 
 
           <h2 class="title">
-            <a href="blog-details.html">حلول متخصصة لجميع الاحتياجات</a>
+            <a href="#">حلول متخصصة لجميع الاحتياجات</a>
           </h2>
           <p class="post-category"> تقديم خدمات مصممة خصيصًا حسب نوع المبنى، استخدام المصعد، ومتطلبات العميل،  🛠️🎯          </p>
          <!-- <p class="post-category">🏢 مصاعد تجارية (للمولات والمكاتب)</p>
@@ -371,7 +371,7 @@
 
 
           <h2 class="title">
-            <a href="blog-details.html"> التصنيع والتركيب </a>
+            <a href="#"> التصنيع والتركيب </a>
           </h2>
           <p class="post-category"> نصنع مصاعدك حسب طلبك ونركبها باحترافية، عشان تعيش تجربة راحة وأمان لا مثيل لها! 🛗💯✨          </p>
 
@@ -388,20 +388,162 @@
         </article>
       </div><!-- End post list item -->
       <div style="text-align: center;" class="col-xl-12 col-md-12" >
-        <a style="background:#eee;padding: 8px 30px 10px 30px;border-radius: 4px;" href="#" class="btn btn-get-started align-self-start"> عرض المزيد </a></div>
+        <a target="_blank" href="blog.html" class="btn btn-get-started align-self-start more"> عرض المزيد </a>
+      </div>
     </div><!-- End recent posts list -->
 
   </div>
 
 </section><!-- /Recent Posts Section -->
 
-    <!-- Services Section   services-->
-    <section id="" class="services section">
+   <!-- Team Section -->
+ <section id="team" class="team section light-background">
 
-      <!-- Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>المنتجات</h2>
+  </div><!-- End Section Title -->
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+        <div class="member-img" style="display: table-cell;">
+          <img src="img/team/team-1.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends"><i target="_blank" class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/almanaelevaror/"><i target="_blank" class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG"><i target="_blank" class="bi bi-snapchat"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc"><i target="_blank" class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wsend.co/966966537321962"><i target="_blank" class="bi bi-whatsapp"></i></a>
+
+
+
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4>الاسم</h4>
+          <span>الوصف</span>
+          <p></p>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+        <div class="member-img" style="display: table-cell;">
+          <img src="img/team/team-2.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends"><i target="_blank" class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/almanaelevaror/"><i target="_blank" class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG"><i target="_blank" class="bi bi-snapchat"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc"><i target="_blank" class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wsend.co/966966537321962"><i target="_blank" class="bi bi-whatsapp"></i></a>
+
+
+
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4> الاسم</h4>
+          <span> الوصف</span>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-img" style="display: table-cell;">
+          <img src="img/team/team-3.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends"><i target="_blank" class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/almanaelevaror/"><i target="_blank" class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG"><i target="_blank" class="bi bi-snapchat"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc"><i target="_blank" class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wsend.co/966966537321962"><i target="_blank" class="bi bi-whatsapp"></i></a>
+
+
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4> الاسم</h4>
+          <span>الوصف</span>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+        <div class="member-img" style="display: table-cell;">
+          <img src="img/team/team-4.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends"><i target="_blank" class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/almanaelevaror/"><i target="_blank" class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG"><i target="_blank" class="bi bi-snapchat"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc"><i target="_blank" class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wsend.co/966966537321962"><i target="_blank" class="bi bi-whatsapp"></i></a>
+
+
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4> الاسم</h4>
+          <span>الوصف</span>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+        <div class="member-img" style="display: table-cell;">
+          <img src="img/team/team-5.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends"><i target="_blank" class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/almanaelevaror/"><i target="_blank" class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG"><i target="_blank" class="bi bi-snapchat"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc"><i target="_blank" class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wsend.co/966966537321962"><i target="_blank" class="bi bi-whatsapp"></i></a>
+
+
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4> الاسم</h4>
+          <span>الوصف</span>
+        </div>
+
+        <br>
+       
+      </div>
+      <!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+        <div class="member-img" style="display: table-cell;">
+          <img src="img/team/team-6.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends"><i target="_blank" class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/almanaelevaror/"><i target="_blank" class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG"><i target="_blank" class="bi bi-snapchat"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc"><i target="_blank" class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wsend.co/966966537321962"><i target="_blank" class="bi bi-whatsapp"></i></a>
+
+
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4> الاسم</h4>
+          <span>الوصف</span>
+          <p></p>
+        </div>
+       
+      </div><!-- End Team Member -->
+      <div style="text-align: center;" class="col-xl-12 col-md-12" >
+        <a target="_blank" href="blog-details.html" class="btn btn-get-started align-self-start more"> عرض المزيد </a>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+    <!-- Services Section   services-->
+   <!-- <section id="" class="services section">
+
       <div class="container section-title" data-aos="fade-up">
         <h2>test</h2>
-      </div><!-- End Section Title -->
+      </div>
       <div class="container"dir="rtl">
         <div class="row gy-4">
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
@@ -410,14 +552,11 @@
                 <h4 class="title"><a href="services-details.html" class="stretched-link"> تحديث المصاعد </a></h4>
                 <p class="description">
                   تحديث المصاعد يعني ببساطة تطوير أو تحسين <br>المصعد القديم بدل ما يتم استبداله بالكامل.<br> 🚀
-الهدف منه إنه يخلي المصعد أكثر أمانًا،<br> أسرع، وأحيانًا أكثر أناقة وكفاءة بالطاقة!</p>
+                         <br> أسرع، وأحيانًا أكثر أناقة وكفاءة بالطاقة!</p>
               </div>
               <div class="icon flex-shrink-0"><img style="width: 190px;height: 150px;margin-left: 15px;" src="img/blog/blog-1.jpg"></div>
-
             </div>
           </div>
-          <!-- End Service Item -->
-
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex">
               <div>
@@ -426,8 +565,7 @@
               </div>
               <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
               <div>
@@ -436,8 +574,7 @@
               </div>
               <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex">
               <div>
@@ -446,8 +583,7 @@
               </div>
               <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex">
               <div>
@@ -455,10 +591,8 @@
                 <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
               </div>
               <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex">
               <div>
@@ -466,29 +600,21 @@
                 <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
               </div>
               <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Services Section -->
-
-
+    </section>--><!-- /Services Section -->
 
     <!-- Features Section -->
-    <section id="features" class="features section">
+    <!-- <section id="features" class="features section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Features</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
-
         <div class="row gy-4 align-items-center features-item">
           <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
             <h3>Corporis temporibus maiores provident</h3>
@@ -504,16 +630,16 @@
               <img src="img/features-light-2.jpg" alt="" class="stack-back">
             </div>
           </div>
-        </div><!-- Features Item -->
+        </div>
 
        
 
       </div>
 
-    </section><!-- /Features Section -->
-<!--   test       testimonials    -->
-<div id="portfolio" class="w3-container">
-  <h2 style="text-align: center;">شركاء النجاح</h2>
+    </section>--><!-- /Features Section -->
+<!--   test       testimonials       section-title   -->
+<div id="portfolio" class="w3-container container section-title">
+  <h2 style="text-align: center;padding-top:50px;">شركاء النجاح</h2>
 </div>
 
 <div class="w3-content" style="max-width:800px">
@@ -532,7 +658,7 @@
   <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
 </div>
 
- <!-- Testimonials Section   **************************    portfolio-->
+ <!-- Testimonials Section   **************************    portfolio
  <section id="" class="testimonials section light-background"dir="rtl">
 
   <div class="container">
@@ -569,8 +695,7 @@
                   <img src="img/customer/test.jpg"alt="">                
                 </div>             
               </div>
-            </div><!-- End testimonial item -->
-            <!-- End testimonial item -->
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -581,7 +706,7 @@
 
   </div>
 
-</section><!-- /Testimonials Section -->
+</section>-->
 
 
 <!--  End test  -->
@@ -590,16 +715,16 @@
     <!-- Faq Section -->
     <section id="faq" class="faq section">
 
-      <div class="container" dir="rtl">
+      <div class="container" dir="rtl" style="padding-top: 50px;">
 
         <div class="row gy-4">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="content px-xl-5">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              <h3><strong>ألاسئلة الشائعة 🧠</strong></h3>
+              <h4>
+                في هالقسم بنجاوبك على أكثر الأسئلة اللي توصلنا دايمًا من عملائنا الكرام 🙋‍♂️✨
+                سواء كنت تفكر تركب مصعد جديد، تحدث المصعد القديم، أو تحتاج خدمة صيانة، جمعنا لك أهم التفاصيل اللي بتفيدك وتريح بالك!  </h4>
             </div>
           </div>
 
@@ -609,31 +734,40 @@
               <div class="faq-item faq-active">
                 <h3><span class="num">1 . </span> <span>ماهي مدة تركيب المصعد ؟</span></h3>
                 <div class="faq-content">
-                  <p>100 يوم .</p>
+                  <p>عادة يستغرق من 15 إلى 30 يوم عمل حسب نوع المصعد والمبنى.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num"> 2 . </span> <span>خدمة الصيانة ماذا تشمل ؟  </span></h3>
+                <h3><span class="num"> 2 . </span> <span> هل تقدمون مصاعد بدون حفرة (Pitless Elevators)؟ </span></h3>
                 <div class="faq-content">
-                  <p> 8زيارات دورية خلال السنة ,خدمة الأعطال على مدار 24 ساعة وخدمة الطوارئ فورا , كما تتم خدمة الصيانة على أيدي فنيين مدربين بكفاءة عالية.</p>
+                  <p> 
+                    نعم، نوفر أنواع متعددة من المصاعد المناسبة للمباني السكنية بدون حفرة أو غرفة ماكينة.                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num"> 3 . </span> <span> كم عدد الصيانات في السنة؟ </span></h3>
+                <h3><span class="num"> 3 . </span> <span> هل المصاعد متوفرة بتصاميم مخصصة؟ </span></h3>
                 <div class="faq-content">
-                   <p> 9 زيارات في السنة </p>
+                   <p> أكيد! نقدر نصمم لك كابينة المصعد بألوان وخامات تناسب ذوقك أو ديكور المبنى.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num"> 4 . </span> <span>ماهي أوقات الدوام الرسمية ؟  </span></h3>
+                <h3><span class="num"> 4 . </span> <span> هل تشمل الخدمة التركيب والصيانة؟ </span></h3>
                 <div class="faq-content">
-                  <p> خدمة العملاء من الساعة 9 صباحاً حتى6 مساء   </p>
+                  <p> نعم، نقدم باقة متكاملة من التصنيع، والتركيب، والصيانة الدورية وحتى الطوارئ.  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num"> 5 . </span> <span> هل تشتغلون على مشاريع كبيرة مثل المولات والفنادق؟ </span></h3>
+                <div class="faq-content">
+                  <p> نعم، عندنا خبرة طويلة في المشاريع الكبيرة ونوفر حلول مصاعد متكاملة حسب الطلب. مع وجود ضمان </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -646,132 +780,10 @@
 
     </section><!-- /Faq Section -->
 
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="img/team/team-5.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Brian Doe</h4>
-              <span>Marketing</span>
-              <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <img src="img/team/team-6.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Josepha Palas</h4>
-              <span>Operation</span>
-              <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
+   
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
+    <!-- <section id="call-to-action" class="call-to-action section dark-background">
       <img src="img/cta-bg.jpg" alt="">
-
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
@@ -783,36 +795,27 @@
           </div>
         </div>
       </div>
-
-    </section><!-- /Call To Action Section -->
+    </section>--><!-- /Call To Action Section -->
 
    
     <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
+    <!-- <section id="recent-posts" class="recent-posts section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Recent Posts</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
-
               <div class="post-img">
                 <img src="img/blog/blog-1.jpg" alt="" class="img-fluid">
               </div>
-
               <p class="post-category">Politics</p>
-
               <h2 class="title">
                 <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
-
               <div class="d-flex align-items-center">
                 <img src="img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
@@ -822,23 +825,17 @@
                   </p>
                 </div>
               </div>
-
             </article>
-          </div><!-- End post list item -->
-
+          </div>
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article>
-
               <div class="post-img">
                 <img src="img/blog/blog-2.jpg" alt="" class="img-fluid">
               </div>
-
               <p class="post-category">Sports</p>
-
               <h2 class="title">
                 <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
-
               <div class="d-flex align-items-center">
                 <img src="img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
@@ -848,23 +845,17 @@
                   </p>
                 </div>
               </div>
-
             </article>
-          </div><!-- End post list item -->
-
+          </div>
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <article>
-
               <div class="post-img">
                 <img src="img/blog/blog-3.jpg" alt="" class="img-fluid">
               </div>
-
               <p class="post-category">Entertainment</p>
-
               <h2 class="title">
                 <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
-
               <div class="d-flex align-items-center">
                 <img src="img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
@@ -874,90 +865,151 @@
                   </p>
                 </div>
               </div>
-
             </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
+          </div>
+        </div>
       </div>
-
-    </section><!-- /Recent Posts Section -->
-
+    </section>--><!-- /Recent Posts Section -->
+<br>
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
-          </div>
-
-
-           <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Append</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-        <!-- End Contact Form -->
-
-        </div>
-
+        <h2>تواصل معنا</h2>
+        <p>   </p>
       </div>
+      <!-- End Section Title -->
 
+      
+<!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" target="_blank" href="https://web.facebook.com/profile.php?id=61575611258740&sk=friends" role="button">
+        <i class="bi bi-facebook" style="color: #3b5998;font-size: 24px;"></i></a>
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://www.instagram.com/almanaelevaror/" role="button">
+        <i class="bi bi-instagram"style="color: #ac2bac;font-size: 24px;"></i></a>
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://www.snapchat.com/add/almanaelevaror?share_id=7u1LSZS1ljU&locale=ar-EG" role="button">
+        <i class="bi bi-snapchat"style="color: #fac522;font-size: 24px;"></i></a>
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://www.tiktok.com/@almana.11?is_from_webapp=1&sender_device=pc" role="button">
+        <i class="bi bi-tiktok"style="font-size: 24px;"></i></a>
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"target="_blank" href="https://wsend.co/966966537321962" role="button">
+        <i class="bi bi-whatsapp"style="color: #25D366;font-size: 24px;"></i></a>
+     
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+   <!-- <section class="">
+      <form action="">
+        <div class="row d-flex justify-content-center">
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <div class="col-md-5 col-12">
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">Email address</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>-->
+    <!-- Section: Form -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+       
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">test 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">test 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">test 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">test 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);color: #a31111;">
+    جميع الحقوق محفوظه لدى شركة المانع للمصاعد 2025 المملكة العربية السعودية
+   
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
     </section><!-- /Contact Section -->
 
   </main>
@@ -969,6 +1021,9 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
+  <a class="whats-app"href="tel:00966537321962" target="_blank"><i class="bi bi-telephone"></i></a>
+  <a href="https://wsend.co/966966537321962" id="fixedWhatsAppIcon" class="wow zoomIn" target="_blank"><i style="font-size: larger;" class="bi bi-whatsapp"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -984,6 +1039,7 @@
   <script src="js/main.js"></script>
   
 <script>
+  
   /*  img slider customer*/
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -1011,6 +1067,11 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
 }
+/*  End img slider customer*/
+//   footer   Initialization for ES Users
+/*import { Input, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input });*/
 </script>
 </body>
 
