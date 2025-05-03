@@ -217,6 +217,7 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: rgba(255, 255, 255, 0);
+ /* background-color: hsla(120, 100%, 50%, 0.3);*/
   --heading-color: #ffffff;
   --nav-color: rgba(255, 255, 255, 0.5);
   --nav-hover-color: #ffffff;
@@ -258,7 +259,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 22px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -630,7 +631,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 60px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
@@ -667,7 +668,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
-.page-title {
+/*.page-title {
   color: var(--default-color);
   background-color: var(--background-color);
   position: relative;
@@ -707,7 +708,7 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
-
+*/
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -952,6 +953,7 @@ section,
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
   margin-bottom: 20px;
+  
 }
 
 .about .icon-box i {
@@ -966,6 +968,7 @@ section,
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background:none;
+  color: #ffd800;
 }
 
 .about .icon-box h3 {
@@ -980,8 +983,8 @@ section,
 }
 
 .about .icon-box:hover i {
-  background-color:#adcce7;
-  color: var(--contrast-color);
+ /* background-color:#adcce7;*/
+  color:var(--nav-hover-color);
 }
 
 .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
@@ -1368,7 +1371,7 @@ section,
   transition: 0.3s;
   transform-style: preserve-3d;
 }
-
+/*
 .pricing .icon i {
   color: var(--background-color);
   font-size: 28px;
@@ -1477,7 +1480,7 @@ section,
     transform: scale(1.15);
   }
 }
-
+*/
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
@@ -1576,7 +1579,7 @@ section,
 
 .team .member .member-img {
   margin: 0 80px;
-  border-radius: 50%;
+  border-radius: 22%;
   overflow: hidden;
   position: relative;
   border: 4px solid var(--background-color);
@@ -2360,7 +2363,7 @@ section,
 /*--------------------------------------------------------------
 # Blog Details Section
 --------------------------------------------------------------*/
-.blog-details {
+/*.blog-details {
   padding-bottom: 30px;
 }
 
@@ -2509,7 +2512,7 @@ section,
 .blog-details .meta-bottom .share i {
   padding-left: 5px;
 }
-
+*/
 /*--------------------------------------------------------------
 # Blog Author Section
 --------------------------------------------------------------*/
@@ -2873,3 +2876,56 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+/*  whatsapp*/
+.whats-app {
+  position: fixed;
+  width: 55px;
+  height: 51px;
+  bottom: 109px;
+  left: 20px;
+  background-color: #237cb8;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;}
+  .whats{
+    color: #fff;
+  }
+
+
+  /*  whatsapp*/
+  /* more  */
+  .more{
+    background:#e84545;
+    padding: 8px 30px 10px 30px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .more:hover{
+    background-color: 
+    color-mix(in srgb, var(--accent-color), transparent 20%);  
+    color: #fff;
+  }
+
+  
+  #fixedWhatsAppIcon {
+    display: block;
+    position: fixed;
+    left: 22px;
+    bottom: 180px;
+    width: 56px;
+    height: 53px;
+    background-color: #54b460;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 9999;
+  }
+  #fixedWhatsAppIcon:hover {
+    background-color: #339933;
+  }
+  
